@@ -5,6 +5,7 @@ A simple full-stack login application built using **React** (with Vite) for the 
 ---
 ## 📁 File Structure
 
+```bash
 react-login/
 ├── client/                         # React frontend with Vite
 │   ├── public/                     
@@ -27,6 +28,7 @@ react-login/
 │
 ├── .gitignore
 └── README.md
+```
 
 # 1. Clone the repository
 ```bash
