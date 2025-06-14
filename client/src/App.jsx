@@ -14,6 +14,7 @@ function App() {
   const [userdata, setUserdata] = useState(null)
    const [authChecked, setAuthChecked] = useState(null)
   const navigate = useNavigate()
+  const backendURL = import.meta.env.VITE_API_URL;
 
   useEffect(() => {
     const saved = getStoredUser();
@@ -27,7 +28,7 @@ function App() {
 
   const handleLogin = async (user) => {
     try {
-      const res = await fetch("http://localhost:5000/api/login", {
+      const res = await fetch(`${backendURL}/api/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -58,7 +59,7 @@ function App() {
 
   const createUser = async (user) => {
     try {
-      const res = await fetch("http://localhost:5000/api/register", {
+      const res = await fetch(`${backendURL}/api/register`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
