@@ -55,4 +55,6 @@ npm install concurrently --save-dev
 ```
 
 # 6. Run the project
+```bash
 npm start
+```
