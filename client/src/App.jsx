@@ -40,7 +40,7 @@ function App() {
 
       const data = await res.json();
       if (data.success == "true") {
-        setUserdata(user)
+        setUserdata(data.user)
         storeUser(data.user)
         setUser(true)
         navigate("/profile")
