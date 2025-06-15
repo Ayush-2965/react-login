@@ -65,17 +65,7 @@ const Signup = ({ createUser,loading }) => {
           <div className='h-max mt-auto w-full'>
 
             <button className='w-full bottom-0 bg-[#6C25FF] hover:bg-[#CBCBCB] h-[46px] rounded-[6px] text-white font-medium cursor-pointer mb-[10px]' type="submit">
-              {loading ? (
-                <div className="flex items-center justify-center gap-2">
-                  <svg className="animate-spin h-5 w-5 text-white" viewBox="0 0 24 24">
-                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="white" strokeWidth="4" fill="none" />
-                    <path className="opacity-75" fill="white" d="M4 12a8 8 0 018-8v4l4-4-4-4v4a12 12 0 00-12 12h4z" />
-                  </svg>
-                  Registering...
-                </div>
-              ) : (
-                "Register"
-              )}
+              {loading ? "Registering..." : "Register"}
 
             </button>
           </div>

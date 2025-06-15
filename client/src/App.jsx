@@ -92,7 +92,7 @@ function App() {
 
   const handleLogout = () => {
     localStorage.removeItem('authUser');
-    setUserdata(null)
+    setUserdata("")
     setUser(true)
     navigate("/login")
   }

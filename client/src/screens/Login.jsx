@@ -30,17 +30,7 @@ const Login = ({ handleLogin,loading }) => {
           <p className='absolute -top-1/2 translate-y-1/2 left-[9px] pl-[5px] w-[96px] h-[17px] bg-[#F7F8F9] text-[#6C25FF]'>Password</p>
         </div>
         <button  className='w-full bg-[#6C25FF] hover:bg-[#CBCBCB] h-[46px] rounded-[6px] text-white font-medium cursor-pointer' type="submit">
-          {loading ? (
-                <div className="flex items-center justify-center gap-2">
-                  <svg className="animate-spin h-5 w-5 text-white" viewBox="0 0 24 24">
-                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="white" strokeWidth="4" fill="none" />
-                    <path className="opacity-75" fill="white" d="M4 12a8 8 0 018-8v4l4-4-4-4v4a12 12 0 00-12 12h4z" />
-                  </svg>
-                  Logging you in...
-                </div>
-              ) : (
-                "Login"
-              )}
+          {loading ? "Logging you in..." : "Login"}
         </button>
       </form>
     </div>
