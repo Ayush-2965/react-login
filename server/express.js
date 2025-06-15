@@ -12,7 +12,7 @@ app.post("/api/login", async (req, res) => {
   try {
     const { email, password } = req.body;
 
-    const usersPath = "server/users.json";
+    const usersPath = "./users.json";
     const usersData = await readFile(usersPath, "utf-8");
     const users = JSON.parse(usersData);
 
@@ -56,7 +56,7 @@ app.post("/api/register", async (req, res) => {
         .json({ error: "Name, email and password are required." });
     }
 
-    const usersPath = "server/users.json";
+    const usersPath = "./users.json";
     const usersData = await readFile(usersPath, "utf-8");
     const users = JSON.parse(usersData);
 
