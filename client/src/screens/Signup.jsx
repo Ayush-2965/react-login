@@ -17,7 +17,7 @@ const Signup = ({ createUser }) => {
 
   return (
     <>
-      <div className="flex flex-col h-full gap-[31px] justify-start ">
+      <div className="flex flex-col h-full gap-[31px] justify-start">
         <div className='text-primary text-[1.75rem] font-medium leading-9 h-[69px] w-[188px] mt-5 mb-0.5'>Create your PopX account</div>
         <form onSubmit={handleSubmit} className='flex flex-col gap-[29px] h-full relative'>
           <div className='relative text-[13px]' >
@@ -62,8 +62,10 @@ const Signup = ({ createUser }) => {
               </label>
             </div>
           </div>
+          <div className='h-max mt-auto w-full'>
 
-          <button className='absolute w-full bottom-0 bg-[#6C25FF] hover:bg-[#CBCBCB] h-[46px] rounded-[6px] text-white font-medium cursor-pointer mb-[10px]' type="submit">Register</button>
+            <button className='w-full bottom-0 bg-[#6C25FF] hover:bg-[#CBCBCB] h-[46px] rounded-[6px] text-white font-medium cursor-pointer mb-[10px]' type="submit">Register</button>
+          </div>
         </form>
       </div>
     </>

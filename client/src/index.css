@@ -37,3 +37,10 @@
   font-weight: 600;
   src: url('../src/assets/fonts/rubik-v30-latin-600.woff2') format('woff2'); 
 }
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* prevent horizontal overflow */
+}

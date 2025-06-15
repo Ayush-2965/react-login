@@ -98,8 +98,8 @@ function App() {
 
   return (
     <>
-      <div className="flex w-screen h-full justify-center gap-2 bg-white">
-        <div className=" w-[375px] h-screen min-h-[812px] p-5 bg-[#F7F8F9] relative">
+      <div className="flex w-screen h-full justify-center bg-white">
+        <div className="w-full max-w-[375px] h-screen overflow-y-auto p-5 bg-[#F7F8F9] relative">
 
           <LoginContext.Provider value={{ userdata ,user}}>
             <Routes>
