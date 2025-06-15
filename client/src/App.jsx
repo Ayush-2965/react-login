@@ -28,6 +28,7 @@ function App() {
 
 
   const handleLogin = async (user) => {
+    setLoading(true)
     try {
       const res = await fetch(`${backendURL}/api/login`, {
         method: "POST",
@@ -60,6 +61,7 @@ function App() {
   }
 
   const createUser = async (user) => {
+    setLoading(true)
     try {
       const res = await fetch(`${backendURL}/api/register`, {
         method: "POST",
@@ -93,7 +95,7 @@ function App() {
   const handleLogout = () => {
     localStorage.removeItem('authUser');
     setUserdata("")
-    setUser(true)
+    setUser(false)
     navigate("/login")
   }
 
